@@ -1,29 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>A Bit Bizaaare</title>
+    <title>A Bit Bizaare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: url('dodgers.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #e5e5e5; /* light gray text */
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(6px);
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #e5e5e5;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            opacity: 0.6;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 6rem 2rem;
+            text-align: center;
+            background: rgba(0,0,0,0.35);
+            backdrop-filter: blur(4px);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #d0d0d0;
+        }
+
+        /* GALLERY GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .card {
+            background: rgba(0,0,0,0.45);
+            backdrop-filter: blur(6px);
+            border-radius: 12px;
+            padding: 1rem;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 0.8rem;
+            color: #e5e5e5;
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-block;
+            padding: 0.7rem 1.4rem;
+            background: #e5e5e5;
+            color: #111;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #cccccc;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(6px);
+        }
+    </style>
 </head>
 
-<body style="background-color: #1E90FF; color: white; font-family: Verdana;">
+<body>
 
-    <h1>Welcome to my website</h1>
-    <p>This is my first fashion website. I'm building it brick by brick.</p>
-
-    <h2>Dodgers</h2>
-    <img src="dodgers.jpg" alt="A description of the image" width="300">
-
-    <h2>Internal Locus – Africa (Raw Audio)</h2>
-    <audio controls>
+    <!-- AUTOPLAY AUDIO -->
+    <audio autoplay loop muted>
         <source src="africa.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
     </audio>
-<img src="dodgersstyle.png" alt="Dodgers-inspired outfit with Long Beach vibe" width="500">
-<img src="asia.png" alt="Eastern-inspired casualwear" width="500">
-<img src="streetwear.png" alt="90's minimalist streetwear" width="500">
 
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">A Bit Bizaare</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </nav>
 
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Welcome to A Bit Bizaare</h1>
+        <p>Building a fashion world, brick by brick.</p>
+    </section>
 
+    <!-- GALLERY -->
+    <section class="grid">
+
+        <div class="card">
+            <img src="dodgersstyle.png" alt="Dodgers outfit">
+            <h3>Go Dodgers</h3>
+            <a class="btn" href="#">View Item</a>
+        </div>
+
+        <div class="card">
+            <img src="asia.png" alt="Eastern-inspired casualwear">
+            <h3>Eastern Streetwear</h3>
+            <a class="btn" href="#">View Item</a>
+        </div>
+
+        <div class="card">
+            <img src="streetwear.png" alt="90s minimalist streetwear">
+            <h3>90s Minimalist Fit</h3>
+            <a class="btn" href="#">View Item</a>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 A Bit Bizaare
+    </footer>
 
 </body>
 </html>
