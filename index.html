@@ -104,6 +104,47 @@
         background: rgba(0,0,0,0.4);
         backdrop-filter: blur(6px);
     }
+
+    /* ⭐ MOBILE RESPONSIVE FIXES ⭐ */
+    @media (max-width: 600px) {
+
+        nav {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0.5rem;
+            display: inline-block;
+        }
+
+        .hero {
+            padding: 3rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+        }
+
+        .hero p {
+            font-size: 1rem;
+        }
+
+        .grid {
+            grid-template-columns: 1fr;
+            padding: 1rem;
+            gap: 1.5rem;
+        }
+
+        .card {
+            padding: 0.8rem;
+        }
+
+        .btn {
+            padding: 0.6rem 1rem;
+            font-size: 0.9rem;
+        }
+    }
 </style>
 </head>
 
