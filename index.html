@@ -1,10 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Bit Bizaare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
     body {
         margin: 0;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Courier New', monospace;
         background: url('dodgers.png') no-repeat center center fixed;
         background-size: cover;
-        color: #e5e5e5; /* light gray text */
+        color: #e5e5e5;
     }
 
     /* NAVBAR */
@@ -23,7 +30,7 @@
         text-decoration: none;
         color: #e5e5e5;
         margin-left: 1.5rem;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     nav a:hover {
@@ -98,6 +105,60 @@
         backdrop-filter: blur(6px);
     }
 </style>
+</head>
 
+<body>
 
+    <!-- AUTOPLAY AUDIO -->
+    <audio autoplay loop muted>
+        <source src="africa.mp3" type="audio/mpeg">
+    </audio>
 
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">A Bit Bizaare</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="rack.html">The Rack</a>
+            <a href="penthouse.html">The Penthouse</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Welcome to A Bit Bizaare</h1>
+        <p>Building a fashion world, brick by brick.</p>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="grid">
+
+        <div class="card">
+            <img src="dodgersstyle.png" alt="Dodgers outfit">
+            <h3>Go Dodgers</h3>
+            <a class="btn" href="#">View Item</a>
+        </div>
+
+        <div class="card">
+            <img src="asia.png" alt="Eastern-inspired casualwear">
+            <h3>Eastern Streetwear</h3>
+            <a class="btn" href="#">View Item</a>
+        </div>
+
+        <div class="card">
+            <img src="streetwear.png" alt="90s minimalist streetwear">
+            <h3>90s Minimalist Fit</h3>
+            <a class="btn" href="#">View Item</a>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 A Bit Bizaare
+    </footer>
+
+</body>
+</html>
